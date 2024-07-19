@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+   
+
+
+    <!-- <div class="scrollable">
+        {% for student in all %}
+            <div class="scroll-object">
+                <h1>{{student.name}}</h1>
+                <h1>{{student.age}}</h1>
+                <h1>{{student.phone}}</h1>
+            </div>
+        {% endfor %}
+    </div>
+
+    <a href="{% url 'logout' %}">
+        <h2>logout</h2>
+    </a> -->
+
+
+    <header>
+        <h1>Admin Dashboard</h1>
+        <a href="{% url 'logout' %}"><button>Logout</button></a>
+    </header>
+
+   <center>
+    <div class="student-sec">
+        <div class="scrollable">
+            {% for student in all %}
+                <div class="scroll-object">
+                    
+                    <h1>{{student.name}}</h1>
+                    <h1>{{student.dob}}</h1>
+                    <h1>{{student.school}}</h1>
+                    
+                    <!-- <img src="{{student.picture}}" alt=""> -->
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+   </center>
+   <center>
+    <!-- {% for student in all %}
+        <img src="/media/{{student.picture}}" alt="">
+    {% endfor %} -->
+   </center>
+
+   
+  
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cc840d8450.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">    
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo div"><img src="/static/images/sgp.jpg" height="100%" width="100%"> </div>
+        <div class="btns div">
+            <div class="login div">
+                <a href="{% url 'login' %}"><button class="btn1">Login</button></a>
+                
+            </div>
+            <div class="login div">
+                <a href=""><button class="btn2">sign up</button></a>
+                
+            </div>
+        </div>
+
+    </header>
+    <div class="menu">
+        <div class="menu-item">
+            <div><a href="{% url 'home' %}">Home</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="{% url 'dept' %}">Departments</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="{% url 'admission' %}">Admissions</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="#xyz">Contact us</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="">Gallery</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="{% url 'about' %}">About us</a></div>
+        </div>
+
+
+    </div>
+
+<div class="slider">
+   
+    <div class="myslide fade stop">
+        <div class="txt stop">
+            <h1 >Innovation in Education</h1>
+            
+            <p>Welcome to Siliguri Government Polytechnic, where academic excellence meets hands-on learning. Our institution is committed to nurturing the next generation of skilled professionals, equipped with cutting-edge knowledge and practical expertise. With a focus on innovation and industry-relevant curriculum, we prepare our students to thrive in dynamic and ever-evolving fields</p>
+        </div>
+        <img src="/static/images/img1.jpg" style="width: 100%; height: 100%;" class="stop s-img">
+    </div>
+    
+    <div class="myslide fade stop">
+        <div class="txt stop">
+            <h1>Enhanced Campus Experience</h1>
+            
+
+            <p>At Siliguri Government Polytechnic, we believe in holistic development. Beyond academics, we provide a vibrant campus life enriched with extracurricular activities, sports, and cultural events. Our diverse community fosters collaboration, creativity, and leadership, shaping well-rounded individuals poised for success in both their careers and personal endeavors<p>
+        </div>
+        <img src="/static/images/img2.jpg" style="width: 100%; height: 100%;" class="stop s-img">
+    </div>
+    
+    <div class="myslide fade stop">
+        <div class="txt stop">
+            <h1>Expert Mentorship for Success</h1>
+            
+           
+            <p>Our experienced faculty members are dedicated mentors, guiding students towards their goals with personalized attention and support. Through interactive teaching methods and real-world applications, we ensure that our students not only grasp theoretical concepts but also develop critical thinking and problem-solving skills essential for professional success<p>
+        </div>
+        
+        <img src="/static/images/img3.jpg" style="width: 100%; height: 100%;" class="stop s-img">
+    </div>
+    
+    <div class="myslide fade stop">
+        <div class="txt stop">
+            <h1>Join Us Today</h1>
+
+            <p>Join us at Siliguri Government Polytechnic and embark on a transformative educational journey. With our commitment to excellence, industry connections, and a conducive learning environment, we empower our students to achieve their fullest potential and make meaningful contributions to society<p>
+        </div>
+        <img src="/static/images/img4.jpg" style="width: 100%; height: 100%;" class="stop s-img">
+    </div>
+</div>
+
+<div class="num-container" id="num-sec">
+    <div class="num">
+        <h1 class="numbers" data-value="200" >0</h1>  
+        <h1 class="title">Students</h1>
+    </div>
+    <div class="num">
+        <h1 class="numbers" data-value="6" >0</h1>  
+        <h1 class="title">Departments</h1>
+    </div>
+    <div class="num">
+        <h1 class="numbers" data-value="15" >0</h1>  
+        <h1 class="title">Events</h1>
+    </div>
+    <div class="num">
+        <h1 class="numbers" data-value="53" >0</h1>  
+        <h1 class="title">Teachers</h1>
+    </div>
+    <div class="num">
+        <h1 class="numbers" data-value="289" >0</h1>  
+        <h1 class="title">Placements</h1>
+    </div>
+</div>
+
+<!-- part 2  -->
+
+<div class="container">
+    <img src="/static/images/img5.jpg" alt="college" class="hidden">
+    <div class="sec-1-text hidden">
+        <h1>Siliguri Government Polytechnic</h1>
+        <p>Siliguri Government Polytechnic: Fostering excellence through innovative education and holistic development. Join our transformative journey where theory meets practice under the guidance of dedicated mentors, shaping tomorrow's leaders and innovators.</p>
+        <button>read more</button>
+    </div>
+</div>
+
+<div class="h-container">
+   <div class="h-head slide-hidden"><h1>Highlights</h1></div>
+   <div class="h-sec">
+    <div class="sec slide-hidden">
+        <img src="/static/images/img1.jpg" alt="">
+        <p>Innovative Education</p>
+    </div>
+
+    <div class="sec slide-hidden">
+        <img src="/static/images/img1.jpg" alt="">
+        <p>Holistic Development</p>
+    </div>
+
+    <div class="sec slide-hidden">
+        <img src="/static/images/img1.jpg" alt="">
+        <p>Expert Mentorship</p>
+    </div>
+   </div>
+</div>
+
+<div class="img">
+    <img src="/static/images/img3.jpg" alt="">
+</div>
+
+<div class="transparent"></div>
+
+<div class="next" id="xyz"></div>
+
+
+<!-- somucode -->
+
+<div class="contactUs">
+    <div class="title">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="box">
+        <!-- form -->
+        <div class="contact form">
+            <h3>Send a Messege</h3>
+            <form>
+                <div class="formbox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input type="text" placeholder="first name">
+                        </div>
+                        <div class="inputBox">
+                            <span>Last Name</span>
+                            <input type="text" placeholder="last name">
+                        </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="youremail@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile number</span>
+                                <input type="text" placeholder="+91 1234567890">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write a Message here...."></textarea>
+                            </div>
+                            </div>
+
+                            <div class="row100 ">
+                                <div class="inputBox ">
+                                    <input type="submit" value="Send">
+                                </div>
+                                </div>
+                 </div>
+            </form>
+        </div>
+        <!-- info box -->
+        <div class="contact info go">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+                <div>
+                    <span><ion-icon name="location"></ion-icon></span>
+                    <p>Siliigri Government Polytechnic, WB <br>INDIA</p>
+                </div>
+                <div>
+                    <span><ion-icon name="mail"></ion-icon></span>
+                    <a href="mailto:loremipsum@email.com">sgp.official@email.com</a>
+                </div>
+                <div>
+                    <span><ion-icon name="call"></ion-icon></span>
+                    <a href="tel:+9198765432100">+91 987 654 32100</a>
+                </div>
+                <!--Social media links-->
+                <ul class="sci">
+                    <li><a herf="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a herf="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    <li><a herf="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a herf="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- map -->
+        <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.2388003775804!2d88.44293397421282!3d26.704817068996114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44184a4bc3e1f%3A0xfadd32c543ff1e6e!2sSiliguri%20Government%20Polytechnic%20College!5e0!3m2!1sen!2sin!4v1711857750078!5m2!1sen!2sin" width="600" height="450" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        </div>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<!-- somucode -->
+<footer class="footer">
+    <div class="footer-col">
+        <h3>Top Branches</h3>
+        <li>Computer Science & Technology</li>
+        <li>Civil Engineering</li>
+        <li>Electrical Engineering</li>
+        <li>Architecture</li>
+    </div>
+    <div class="footer-col">
+        <h3>Legal</h3>
+        <li>Terms & condition</li>
+        <li>Privacy</li>
+        <li>Copyright</li>
+        <li>Accessibility</li>
+    </div>
+    <div class="footer-col">
+        <h3>Essentials</h3>
+        <li>E-mail</li>
+        <li>Contact us</li>
+        <li>Portal</li>
+        <li>Jobs</li>
+    </div>
+    <div class="footer-col">
+        <h3>A-Z</h3>
+        <li>Faculties,departments and institute</li>
+        <li>Research groups</li>
+        <li>Administration and support services</li>
+        <li>People finder</li>
+    </div>
+    <div class="footer-col">
+        <h3>Address</h3>
+      <p><b>Siliguri Goverment Polytechnic :</b><br>siliguri,Darjeeling,West bengal,<br>Pin:XXXXXX</p>
+    </div>
+    <div class="copyright">
+        <p>copyright ©2024 All rights reserved | This is made by Sgp Students</p>
+        <div class="links">
+            <p>Follow us :</p>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/static/js/jsfile.js"></script>
+
+    
+</body>
+
+</html>

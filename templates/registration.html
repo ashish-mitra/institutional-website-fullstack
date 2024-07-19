@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--======== CSS ========-->
+    <link rel="stylesheet" href="/static/css/registration.css">
+     
+    <!--===== Iconscout CSS =====-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>Student Registration</header>
+
+        <form action="{% url 'insertuser' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" name="name" required >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="dob">Age</label>
+                            <input type="text" id="dob" placeholder="Enter birth date" name="dob" >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" name="email">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" placeholder="Enter mobile number" name="phone" >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender"  name="gender">
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="branch">Branch</label>
+                            <select id="branch"  name="branch">
+                                <option disabled selected>Select Branch</option>
+                                <option>Electronics and Tele-Communication Engineering</option>
+                                <option>Electrical Engineering</option>
+                                <option>Civil Engineering</option>
+                                <option>Architecture Assistantship</option>
+                                <option>Electronics and Instrumentation Engineering</option>
+                                <option>Computer Science and Technology</option>
+                                <option>Pharmacy</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Educational Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="passing_year">Year of Qualifying madhyamik</label>
+                            <input type="text" id="passing_year" placeholder="Enter Year" name="passing_year">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="percentage">Total Percentage Obtained in madhyamik</label>
+                            <input type="number" id="percentage" placeholder="Enter Percentage" name="percentage">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="school">Name of the Institution</label>
+                            <input type="text" id="school" placeholder="Enter Institution"  name="school">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="school_district">District of Institution</label>
+                            <input type="text" id="school_district" placeholder="Enter District"  name="school_district">
+                        </div>
+
+                        <div class="input-field input-file">
+                            <label for="admit_card">Upload Admit Card</label>
+                            <input type="file" id="admit_card"  name="admit_card">
+                        </div>
+
+                        <div class="input-field input-file">
+                            <label for="marksheet">Upload Marksheet</label>
+                            <input type="file" id="marksheet"  name="marksheet">
+                        </div>
+                    </div>
+
+                    <button type="button" class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="street">Street number</label>
+                            <input type="text" id="street" placeholder="Enter your street"  name="street">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="village">Village</label>
+                            <input type="text" id="village" placeholder="Enter your village"  name="village">
+                        </div>
+
+                        <!-- <div class="input-field">
+                            <label for="village">Village</label>
+                            <input type="text" id="village" placeholder="Enter Village"  name="village">
+                        </div> -->
+
+                        <div class="input-field">
+                            <label for="state">State</label>
+                            <input type="text" id="state" placeholder="Enter your state"  name="state">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="district">District</label>
+                            <input type="text" id="district" placeholder="Enter your district" name="district">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="block">Block Number</label>
+                            <input type="number" id="block" placeholder="Enter block number" name="block">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="pin">Pin Code</label>
+                            <input type="number" id="pin" placeholder="Enter pin code" name="pin">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="backBtn">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Back</span>
+                    </div>
+                    
+                    <button type="submit" class="submit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

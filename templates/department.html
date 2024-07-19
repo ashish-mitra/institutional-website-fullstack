@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>department</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/priti.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="head">
+        <div class="logo div"><img src="/static/images/sgp.jpg" height="100%" width="100%"> </div>
+        <div class="btns div">
+            <div class="login div">
+                <a href="{% url 'login' %}"><button class="btn1">Login</button></a>
+            </div>
+            <div class="login div">
+                <a href=""><button class="btn2">sign up</button></a>
+            </div>
+        </div>
+
+    </header>
+    <div class="menu">
+        <div class="menu-item">
+            <div><a href="{% url 'home' %}">Home</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="{% url 'dept' %}">Departments</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="">Admissions</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="">Contact us</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="">Gallery</a></div>
+        </div>
+        <div class="menu-item">
+            <div><a href="">About us</a></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- header -->
+
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/static/images/images1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="/static/images/img2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="/static/images/img3.jpeg" alt=""></div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    
+  </div>
+    </div >
+
+            <!-- -----------nav----------- -->
+        </div>
+        <div class="departments">
+            <div class="header">
+                <h1>Our Departments</h1>
+            </div>
+            <div class="row">
+                <div id="dep" class="cst">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>CST</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos libero ea sequi mollitia harum
+                            ipsum ullam molestias eaque </p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+
+                <div id="dep" class="ee">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>Electrical</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi, fuga similique dolor
+                            quos deleniti deserunt, labore odio </p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+
+                <div id="dep" class="civil">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>Civil</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quos consequuntur, asperiores
+                            cum, vel animi placeat libero !</p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+                <div id="dep" class="etce">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>ETCE</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius maxime officiis dolor natus
+                            quibusdam impedit temporibus odio nobis </p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+
+                <div id="dep" class="arch">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>Architechture</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sequi consequuntur aut
+                            adipisci officiis repellat explicabo nihil aperiam</p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+
+
+                <div id="dep" class="pharmacy">
+                    <div class="img"></div>
+                    <div class="details">
+                        <h1>Pharmacy</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique assumenda
+                            commodi. Nulla consequuntur maiores debitis .</p>
+                        <button><a href="#">Click here</a><i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="more"><i class="fa-solid fa-angles-down"></i></div> -->
+        </div>
+
+        <!-- ----------js----------- -->
+        <!-- <script>
+        let morebtn = document.querySelector('#more');
+        let currentitem =3;
+        morebtn.onclick = () =>{
+            let deps = [...document.querySelectorAll('#dep')];
+            for (var i=currentitem; i < currentitem + 3; i++){
+                deps[i].style.display='inline-block';
+            }
+            currentitem += 3;
+
+            if(currentitem >= deps.length){
+                morebtn.style.display = 'none';
+            }
+        }
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction: false,
+            },
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
+    </script>
+
+</body>
+
+</html>

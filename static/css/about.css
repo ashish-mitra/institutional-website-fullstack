@@ -1,0 +1,846 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ------------------------header------------------------ */
+
+.head {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to bottom, #a9e4ee, #78d8e9, #13c6e6);
+    border-bottom-left-radius: 30vh;
+}
+
+.row {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+
+.text {
+    width: 45%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 40px;
+    padding-top: 20vh;
+}
+
+.head .text h1 {
+    font-size: clamp(20px,50px,60px);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.head p {
+    font-size: 25px;
+}
+
+.pic {
+    height: 60vh;
+    width: 33%;
+    background-size: cover;
+    background-image: url(abt.jpg);
+    border-bottom-left-radius: 3vh;
+    border-top-left-radius: 10vh;
+    margin-top: 6vh;
+    margin-left: 10vw;
+    z-index: 1;
+}
+
+.pic1 {
+    position: absolute;
+    height: 55vh;
+    width: 32%;
+    background-size: cover;
+    background-image: url(abt.jpg);
+    border-bottom-left-radius: 1vh;
+    border-top-left-radius: 10vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 10vh;
+    margin-top: 50vh;
+    margin-left: 30vw;
+    z-index: 2;
+
+}
+
+/* -------------------------para---------------------- */
+.para {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 95%;
+    height: 70vh;
+}
+
+
+.para .row .text {
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15vw;
+    padding-top: 20vh;
+}
+
+.para .row .text span {
+    color: rgb(38, 202, 202);
+    font-size: 2rem;
+    font-family: sans-serif;
+
+}
+
+.para .text h1 {
+    font-size: clamp(20px,50px,50px);
+}
+
+.text1 {
+    width: 45%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    padding-top: 25vh;
+}
+
+.text1 p {
+    font-size: 18px;
+}
+
+.text1 p span {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+
+
+/* -----------------------------------------help---------------------------- */
+
+.help h1 {
+    margin-left: 40vw;
+    width: 40vw;
+    font-size: clamp(20px,50px,45px);
+}
+
+.help h1 span {
+    color: rgb(38, 202, 202);
+    margin-left: 6vw;
+    font-size: 2rem;
+    font-family: sans-serif;
+
+}
+
+.row1 {
+    width: 78vw;
+    height: 88vh;
+    margin-left: 15vw;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.fa-solid {
+    font-size: 5vh;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 9vw;
+    margin-bottom: 3vh;
+
+}
+
+.field {
+    height: 33vh;
+    width: 90%;
+    margin-left: 1.2vw;
+
+}
+
+.help h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.help p {
+    color: grey;
+
+}
+
+
+.box1,
+.box2,
+.box3 {
+    margin-top: 15vh;
+    height: 57vh;
+    width: 23vw;
+    margin-right: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+/* -------------------------------mentors---------------------------- */
+.mentors .row1 {
+    width: 87vw;
+    height: 88vh;
+    margin-left: 8vw;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+
+
+.mentors h1 {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    width: 40vw;
+    font-size: clamp(20px,40px,40px);
+}
+
+.mentors h1 span {
+    color: rgb(38, 202, 202);
+    margin-left: vw;
+    font-size: 2rem;
+    font-family: sans-serif;
+
+}
+
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+
+    margin-top: 15vh;
+    height: 40vh;
+    width: 15vw;
+    margin-right: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.img1 {
+    background-image: url(img1.jpeg);
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(img\(2.jpeg);
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url(img93.jpeg);
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url(img4.jpeg);
+    background-size: cover;
+}
+
+.img5 {
+    background-image: url(img5.jpeg);
+    background-size: cover;
+}
+
+.mentors h4 {
+    font-size: 25px;
+    color: rgb(71, 74, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* ---------------------------talk-------------------------- */
+
+.talk .row {
+    width: 96%;
+    height: 88vh;
+    margin-left: 40px;
+    background-color: rgba(243, 240, 240, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.talk .text {
+    width: 39%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    padding-top: 15vh;
+
+}
+
+.talk h1 span {
+    font-size: 24px;
+    margin-top: 40vh;
+    color: rgb(38, 202, 202);
+    font-family: sans-serif;
+}
+
+.chat {
+
+    height: 80vh;
+    width: 50%;
+    margin-top: 10vh;
+
+}
+
+#ch {
+    font-size: 70px;
+    padding: 50px;
+    background-color: #ffffff;
+    color: rgb(106, 226, 226);
+    margin-right: 10vh;
+    margin-top: 10vh;
+    border: 2px solid black;
+    border-radius: 2vh;
+}
+
+
+/* -----------------------------responsiveness------------------ */
+
+@media (min-width:320px) and (max-width:600px) {
+    .head {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .text {
+        margin-right: 10px;
+        margin-left: 20px;
+        padding-top: 10vh;
+    }
+
+   .head .text h1 {
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+
+    .pic {
+        height: 40vh;
+        width: 33%;
+        background-size: cover;
+        background-image: url(abt.jpg);
+        border-bottom-left-radius: 3vh;
+        border-top-left-radius: 10vh;
+        margin-top: 6vh;
+        margin-left: 10vw;
+        z-index: 1;
+    }
+
+    .pic1 {
+        position: absolute;
+        height: 40vh;
+        width: 32%;
+        margin-top: 35vh;
+        margin-left: 30vw;
+        z-index: 2;
+    }
+
+    /* ---------------para------------ */
+
+    .para .row{
+        margin-left: 5vw;
+    }
+
+    .para .row .text {
+        width: 40%;
+        height: 40vh;
+        margin-left: 2vw;
+    }
+
+    .para .row .text span {
+        
+        font-size: 1rem;
+      
+    }
+
+   
+
+    .text1 {
+        width: 45%;
+        height: 35vh;
+        margin-right: 20px;
+        padding-top: 25vh;
+    }
+
+    .text1 p {
+        font-size: 13px;
+    }
+
+    .text1 p span {
+        font-size: 1rem;
+    }
+
+    /* -------------------help-------------- */
+
+    .help h1 {
+        margin-left: 20vw;
+        width: 80vw;
+        font-size: 30px;
+        margin-top: 30vh;
+    }
+
+    .help h1 span {
+        margin-left: 15vw;
+        font-size: 1.3rem;
+    }
+
+    .row1 {
+        width: 88vw;
+        height: 65vh;
+        margin-left: 8vw;
+        margin-right: 8vw;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .fa-solid {
+        font-size: 3vh;
+        padding: 10px;
+        margin-top: 5vh;
+        margin-left: 6vw;
+        margin-bottom: 2vh;
+
+    }
+
+    .help h2 {
+        font-size: 15px;
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    .help p {
+        font-size: 10px;
+    }
+
+
+    .box1,
+    .box2,
+    .box3 {
+        margin-top: 15vh;
+        height: 40vh;
+        width: 23vw;
+        margin-right: 15px;
+    }
+
+    /* ---------------------mentors---------------- */
+
+    .mentors{
+        margin-bottom: 10vh;
+        margin-top: 20vh;
+        height: 200vh;
+    }
+    .mentors h1 {
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 80vw;
+        font-size: 30px;
+    }
+
+    .mentors h1 span {
+       font-size: 1.3rem;
+    }
+
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+
+        margin-top: 15vh;
+        height: 40vh;
+        width: 38vw;
+        margin-right: 14px;
+    }
+
+    .mentors h4 {
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    /* ---------------------talk--------------------- */
+
+    .talk .text{
+        width: 33%;
+        
+    }
+    .talk .row {
+        width: 96%;
+        height: auto;
+        margin-left: 10px;
+    }
+    
+    .para .text h1{
+        font-size: 25px;
+    }
+    .talk h1 span {
+        font-size: 1rem;
+        margin-top: 40vh;
+        
+    }
+    
+   .chat{
+    width: 53%;
+   }
+    
+    #ch {
+        font-size: 30px;
+        padding: 25px;
+        background-color: #ffffff;
+        color: rgb(106, 226, 226);
+        margin-right: 2vh;
+        margin-top: 3vh;
+        border: 2px solid black;
+        border-radius: 2vh;
+    }
+    
+}
+
+
+@media (min-width:600px) and (max-width:770px){
+    .head {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .text {
+        margin-right: 10px;
+        margin-left: 0px;
+        padding-top: 10vh;
+    }
+
+   .head .text h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: sans-serif;
+    }
+
+    .head p {
+        font-size: 16px;
+    }
+
+    .pic {
+        height: 40vh;
+        width: 33%;
+        background-size: cover;
+        background-image: url(abt.jpg);
+        border-bottom-left-radius: 3vh;
+        border-top-left-radius: 10vh;
+        margin-top: 6vh;
+        margin-left: 10vw;
+        z-index: 1;
+    }
+
+    .pic1 {
+        position: absolute;
+        height: 40vh;
+        width: 32%;
+        margin-top: 35vh;
+        margin-left: 30vw;
+        z-index: 2;
+    }
+
+    /* ---------------para------------ */
+
+    .para .row{
+        margin-left: 5vw;
+    }
+
+    .para .row .text {
+        width: 40%;
+        height: 40vh;
+        margin-left: 2vw;
+    }
+
+    .para .row .text span {
+        
+        font-size: 1.3rem;
+      
+    }
+
+    .para .text h1{
+        font-size: 35px;
+    }
+
+    .text1 {
+        width: 45%;
+        height: 35vh;
+        margin-right: 20px;
+        padding-top: 25vh;
+    }
+
+    .text1 p {
+        font-size: 15px;
+        margin-right: 3vw;
+    }
+
+    .text1 p span {
+        font-size: 1.1rem;
+    }
+
+    /* -------------------help-------------- */
+
+    .help h1 {
+        margin-left: 35vw;
+        width: 80vw;
+        font-size: 35px;
+        margin-top: 30vh;
+    }
+
+    .help h1 span {
+        margin-left: 10vw;
+        font-size: 1.3rem;
+    }
+
+    .row1 {
+        width: 88vw;
+        height: 65vh;
+        margin-left: 13vw;
+        margin-right: 8vw;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .fa-solid {
+        font-size: 3vh;
+        padding: 10px;
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-bottom: 2vh;
+
+    }
+
+    .help h2 {
+        font-size: 15px;
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    .help p {
+        font-size: 10px;
+    }
+
+
+    .box1,
+    .box2,
+    .box3 {
+        margin-top: 15vh;
+        height: 40vh;
+        width: 23vw;
+        margin-right: 15px;
+    }
+
+    /* ---------------------mentors---------------- */
+
+    .mentors{
+        margin-bottom: 10vh;
+        margin-top: 20vh;
+        height: 200vh;
+    }
+    .mentors h1 {
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 80vw;
+        font-size: 35px;
+    }
+
+    .mentors h1 span {
+       font-size: 1.3rem;
+    }
+
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+
+        margin-top: 15vh;
+        height: 40vh;
+        width: 38vw;
+        margin-right: 14px;
+    }
+
+    .mentors h4 {
+        font-size: 25px;
+        margin-top: 6px;
+    }
+
+    /* ---------------------talk--------------------- */
+
+    .talk .text{
+        width: 33%;
+        
+    }
+    .talk .row {
+        width: 96%;
+        height: auto;
+        margin-left: 10px;
+    }
+    
+    .text h1{
+        font-size: 35px;
+    }
+    .talk h1 span {
+        font-size: 1.3rem;
+        margin-top: 40vh;
+        
+    }
+    
+   .chat{
+    width: 53%;
+    margin-top: 20vh;
+   }
+    
+    #ch {
+        font-size: 56px;
+        padding: 40px;
+        background-color: #ffffff;
+        color: rgb(106, 226, 226);
+        margin-right: 9vh;
+        margin-top: 9vh;
+        border: 2px solid black;
+        border-radius: 2vh;
+    }
+}
+
+@media (min-width:771px) and (max-width:1024px){
+
+    .para .text h1{
+        font-size: 30px;
+    }
+
+    .para .row.text span{
+        font-size: 1.1rem;
+    }
+
+    /* ---------help------------ */
+   
+    .help h1 {
+        margin-left: 35vw;
+        width: 80vw;
+        font-size: 35px;
+        margin-top: 30vh;
+    }
+
+    .help h1 span {
+        margin-left: 8vw;
+        font-size: 1.3rem;
+    }
+
+    .row1 {
+        width: 88vw;
+        height: 65vh;
+        margin-left: 10vw;
+        margin-right: 8vw;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .fa-solid {
+        font-size: 5vh;
+        padding: 15px;
+        margin-top: 5vh;
+        margin-left: 9vw;
+        margin-bottom: 2vh;
+
+    }
+
+    .help h2 {
+        font-size: 25px;
+        margin-top: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    .help p {
+        font-size: 16px;
+    }
+
+
+    .box1,
+    .box2,
+    .box3 {
+        margin-top: 15vh;
+        height: 48vh;
+        width: 25vw;
+        margin-right: 15px;
+    }
+
+    /* ---------------------mentors---------------- */
+
+    .mentors{
+        margin-bottom: 10vh;
+        margin-top: 20vh;
+        height: 85vh;
+    }
+
+    .mentors .row1{
+        width: 88vw;
+    }
+    .mentors h1 {
+        margin-left: 5vw;
+        margin-top: 5vh;
+        width: 80vw;
+        font-size: 35px;
+    }
+
+    .mentors h1 span {
+       font-size: 1.3rem;
+    }
+
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5 {
+
+        margin-top: 15vh;
+        height: 40vh;
+        width: 15vw;
+        margin-right: 14px;
+    }
+
+}
